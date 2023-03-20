@@ -1,7 +1,12 @@
-Для сборки необходим CMake версии 3.18 или выше
+## Build instructions
 
-MacOs(возможно так же будет и на Linux работать):
+### Requirements   
+- CMake 3.18
+- Clang 14+
 
+### Building
+
+Execute in the cloned repository:  
 ```
 mkdir build
 cd build
@@ -9,9 +14,4 @@ cmake ..
 cmake --build .
 ```
 
-Для Windows:
-
-1. Собирается только clang компилятором;
-2. Нужно сконфигурировать проект под visual studio и открыть в ней, либо сразу открыть проект как папку;
-3. Выбрать компилятор clang;
-4. Собрать, запустить.
+For windows you need to generate poroject for Visual Studio and build with **Clang**.
